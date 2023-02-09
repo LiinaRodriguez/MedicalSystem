@@ -29,7 +29,7 @@
             </ul>
         </div>
         <div class="content">
-            <h2>Bienvenido </h2>
+            <h2>Bienvenido  </h2>
             <div class="container-fluid">
                 <div class="mt-4 pt-2 registrar">
                     <a class="btn btn-primary" href="?c=cita&a=Crud">Reservar Cita</a>

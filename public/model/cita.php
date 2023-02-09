@@ -33,7 +33,19 @@
         public function selectEsp(){
             try{
                 $result = array();
-                $stm = $this->pdo->prepare("SELECT especialidad FROM medicalsystemdb.especialidad ;");
+                $stm = $this->pdo->prepare("SELECT * FROM medicalsystemdb.especialidad ;");
+                $stm->execute();
+                return $stm->fetchAll(PDO::FETCH_OBJ);
+
+            }catch(Exception $e){
+                die($e->getMessage());
+            }
+        }
+
+        public function selectSede(){
+            try{
+                $result = array();
+                $stm = $this->pdo->prepare("SELECT * FROM medicalsystemdb.sede ;");
                 $stm->execute();
                 return $stm->fetchAll(PDO::FETCH_OBJ);
 
@@ -59,6 +71,18 @@
                 $result = array();
                 $stm = $this->pdo->prepare("SELECT * FROM medicalsystemdb.paciente ;");
                 $stm->execute();
+                return $stm->fetchAll(PDO::FETCH_OBJ);
+
+            }catch(Exception $e){
+                die($e->getMessage());
+            }
+        }
+
+        public function selectPatient($email){
+            try{
+              
+                $stm = $this->pdo->prepare("SELECT id_paciente FROM medicalsystemdb.paciente WHERE paciente.email = ?");
+                $stm->execute(array($email));
                 return $stm->fetchAll(PDO::FETCH_OBJ);
 
             }catch(Exception $e){
@@ -119,7 +143,6 @@
                 die($e->getMessage());
             }
         }
-
 
         public function Eliminar($id_cita){
             try{

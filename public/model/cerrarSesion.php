@@ -4,6 +4,6 @@
     $userSession = new UserSession();
     $userSession->CerrarSesion();
     
-    header("Location: ../view/login.php");
+    header("Location: ../view/home.php");
 
 ?>

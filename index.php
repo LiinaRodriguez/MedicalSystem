@@ -30,7 +30,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="public\view\login.php">Log In</a>
+                        <a class="nav-link " aria-current="page" href="public\view\home.php">Log In</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"

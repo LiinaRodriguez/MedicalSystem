@@ -6,10 +6,15 @@
 
         public function setUsuarioActual($user){
             $_SESSION['user'] = $user;
+            
         }
 
         public function getUsuarioActual(){
             return $_SESSION['user']; 
+        }
+
+        public function getId(){
+            return $_SESSION['id_paciente'];
         }
 
         public function CerrarSesion(){

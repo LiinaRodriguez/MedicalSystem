@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +13,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Log-In</title>
 </head>
-
 <body>
     <section class="vh-100" style="background-color: #e5e8fd;">
         <div class="container py-5 h-100">
@@ -26,23 +27,24 @@
                             <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                 <div class="card-body p-4 p-lg-5 text-black">
 
-                                    <form action="paciente/cita.php" method="POST">
+                                    <form action="" method="POST">
 
                                         <div class="d-flex align-items-center mb-3 pb-1">
                                             <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
                                             <span class="h1 fw-bold mb-0">Medical System </span>
                                         </div>
 
+
                                         <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Inicia Sesion</h5>
 
                                         <div class="form-outline mb-4">
                                             <h6 class="fw-normal">Tipo de usuario</h6>
-                                            <select id="dropdown" name="role" class="form-select" name="rol" required>
+                                            <select id="dropdownrole" name="role" class="form-select" required>
                                                 <option class="dropdowm-item" disabled selected value>Tipo de usuario
                                                 </option>
-                                                <option class="dropdowm-item" value="asesor">Asesor</option>
-                                                <option class="dropdowm-item" value="paciente">Afiliado</option>
-                                                <option class="dropdowm-item" value="medico">Médico</option>
+                                                <option class="dropdowm-item" value="1">Asesor</option>
+                                                <option class="dropdowm-item" value="3">Afiliado</option>
+                                                <option class="dropdowm-item" value="2">Médico</option>
                                             </select>
                                         </div>
 
@@ -60,12 +62,14 @@
                                             if(isset($errorLogin)){
                                                 echo $errorLogin;
                                             }
+                                            
                                         ?>
+
 
                                         <div class="pt-1 mb-4 ">
                                             <button class="btn btn-dark btn-lg btn-block" type="submit">Acceder</button>
                                         </div>
-                                    </form>
+                                        </form>
 
                                 </div>
                             </div>
@@ -76,7 +80,9 @@
         </div>
     </section>
 
-
+<script>
+    let rol = 
+</script>
 
 
 </body>

@@ -18,9 +18,9 @@
     <!--<link rel="stylesheet" href="assets/css/style.css" />
     <link href="plugins/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />-->
     
-    <title>Tal cual</title>
+    <title>Medical System</title>
 </head>
 <body>
-    
+ 
 </body>
 </html>

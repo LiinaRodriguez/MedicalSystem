@@ -6,33 +6,35 @@
     $user = new User();
 
     if(isset($_SESSION['user'])){
-        #cho'existe sesion';
+        #echo'existe sesion';
 
         $user->setUser($userSession->getUsuarioActual());
         include_once "../view/header.php";
-        include_once  'C:\xampp\htdocs\MedicalSystem\public\view\paciente\paciente_cita.php';
+        include_once "paciente/cita.php";
 
     }elseif (isset($_POST['email']) && isset($_POST['password'])){
-            echo'validacion de login';
+           # echo'validacion de login';
             $userForm = $_POST['email'];
             $passForm = $_POST['password'];
+         
             if($user->userExist($userForm, $passForm)){
-                echo 'usuario válido';
+                #echo 'usuario válido';
                
-                $userSession->setUsuarioActual($userForm); 
-                $user->setUser($userForm);
+               $userSession->setUsuarioActual($userForm); 
+               $user->setUser($userForm);
 
-                
-                include_once "../view/paciente/cita.php";
+               include_once "../view/header.php";
+                include_once "paciente/cita.php";
 
             }else{
                echo 'usuario invalido';
                 $errorLogin = "Correo o contraseña incorrectos";
-                include_once '../view/login.php';
+                include_once 'home.php';
             }
     }else{
-        echo'Login'; 
-        include_once 'C:\xampp\htdocs\MedicalSystem\public\view\login.php';
+        #echo'Login'; 
+        include_once 'login.php';
     }
+
     
 ?>

@@ -1,6 +1,7 @@
 <?php
     //require_once "public/model/conection.php";
     require_once "C:\\xampp\htdocs\MedicalSystem\public\model\conection.php";
+    
     $controller = "cita";
 
     if(!isset($_REQUEST['c'])){

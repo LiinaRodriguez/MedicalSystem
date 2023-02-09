@@ -11,7 +11,6 @@
     <title>Pacientes Nueva Cita</title>
 
 </head>
-
 <body>
     <div class="main-container d-flex">
         <div class="sidebar" id="side-nav">
@@ -32,7 +31,9 @@
         </div>
         <div class="content">
             <h1 class="page-header">
-                <?php echo $cita->id_cita!=null ? $cita->id_paciente: 'Reserva Cita'; ?>
+                <?php echo $cita->id_cita!=null 
+                ? $cita->id_paciente
+                : 'Reserva Cita'; ?>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="?c=cita">Cita/ </a></li>
@@ -50,8 +51,8 @@
                 <select class="form-select" aria-label="Default select example" name="id_especialidad" required>
                     <option disabled selected >Seleccionar</option>
                     <option value="">------</option>
-                    <?php foreach ($this->model->selectMedico() as $m) :?>
-                        <option value="<?php echo $m->id_especialidad; ?>"><?php echo $m->id_especialidad ."" ; ?></option>
+                    <?php foreach ($this->model->selectEsp() as $m) :?>
+                        <option value="<?php echo $m->id_especialidad; ?>"><?php echo $m->especialidad ."" ; ?></option>
                     <?php endforeach; ?>
                 </select>
                 </div>
@@ -68,24 +69,29 @@
                 <select class="form-select" aria-label="Default select example" name="id_sede" required>
                     <option disabled selected >Seleccionar</option>
                     <option value="" selected>------</option>
-                    <?php foreach ($this->model->selectMedico() as $m) :?>
-                        <option value="<?php echo $m->id_sede ?>"><?php echo $m->id_sede ."" ; ?></option>
+                    <?php foreach ($this->model->selectSede() as $m) :?>
+                        <option value="<?php echo $m->id_sede ?>"><?php echo $m->sede ."" ; ?></option>
                     <?php endforeach; ?>
                 </select>
                 </div>
+
                 <div class="mb-3"> Seleccione paciente
                 <select class="form-select" aria-label="Default select example" name="id_paciente" required>
                     <option disabled selected >Seleccionar</option>
-                    <option value="">------</option>
+                    <option value="" selected>------</option>
                     <?php foreach ($this->model->selectPaciente() as $m) :?>
-                        <option value="<?php echo $m->id_paciente; ?>"><?php echo $m->id_paciente ."" ; ?></option>
+                        <option value="<?php echo $m->id_paciente ;?>"><?php echo $m->nombre ."" ; ?></option>
                     <?php endforeach; ?>
                 </select>
                  </div>
+                
+                 <input type="hidden" name="email" value="<?php echo $emailuser; ?>"/>
+               
                 <button type="submit"  class="btn btn-primary">Guardar</button>
                 </form>
             </div>
             </div>
+            
     </div>
     
     <!--Fonts-Awesome-->

@@ -38,7 +38,7 @@
                    ? $this->model->Actualizar($cita)
                   : $this->model->Registrar($cita); 
                 
-                header('Location: ../paciente/cita.php');
+                header('Location: ../view/paciente/cita.php');
                 die;
         }
 
