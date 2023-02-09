@@ -47,7 +47,7 @@
                         <a class="nav-link" aria-current="page" href="#">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="public/view/asesor/paciente.php">Asesor</a>
+                        <a class="nav-link" aria-current="page" href="loginadmin.html">Asesor</a>
                     </li>
                 </ul>
             </div>
@@ -111,6 +111,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script>
+        function loginAsesor(){
+            var usuario = 
+            var password =
+
+            if(usuario=='admin' && password=='password'){
+                window.location='public/view/asesor/paciente.php';
+            }
+        }
+    </script>
+
 </body>
 
 </html>
