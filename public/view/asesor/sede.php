@@ -1,7 +1,7 @@
 <?php
     //require_once "public/model/conection.php";
     require_once "C:\\xampp\htdocs\MedicalSystem\public\model\conection.php";
-    $controller = "paciente";
+    $controller = "sede";
 
     if(!isset($_REQUEST['c'])){
         //require_once "public/controller/$controller-controller.php";

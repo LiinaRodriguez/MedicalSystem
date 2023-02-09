@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/admin.css?1.2" rel="stylesheet">
+    <link href="/../../MedicalSystem/public/view/css/admin.css" rel="stylesheet">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -24,10 +24,12 @@
             </div>
             <ul class="list-unstyled px-2 text-white">
                 <li class=""><a class="px-1 text-decoration-none d-block nav-link" href=""><i class="fa-solid fa-house px-3 py-2"></i>Inicio</a></li>
-                <li class=""><a class="px-1 text-decoration-none d-block nav-link" href="reservarCita.php"><i class="fa-solid fa-envelope px-3 py-2"></i>Citas</a></li>
+                <li class=""><a class="px-1 text-decoration-none d-block nav-link" href=""><i class="fa-solid fa-envelope px-3 py-2"></i>Citas</a></li>
+                <li class=""><a class="px-1 text-decoration-none d-block nav-link" href="/../../MedicalSystem/Public/model/cerrarSesion.php"><i class="fa-solid fa-envelope px-3 py-2"></i>Cerrar sesion</a></li>
             </ul>
         </div>
         <div class="content">
+            <h2>Bienvenido </h2>
             <div class="container-fluid">
                 <div class="mt-4 pt-2 registrar">
                     <a class="btn btn-primary" href="?c=cita&a=Crud">Reservar Cita</a>
@@ -53,8 +55,8 @@
                         <td><?php echo $r->id_especialidad; ?></td>
                         <td><?php echo $r->id_sede; ?></td>
                             <td>
-                                <a href="?c=cita&a=Crud&id_cita=<?php echo $r->id_cita; ?>" class="btn btn-small btn-dark"><i class="fa-solid fa-pen-to-square"></i></a>
-                                <a onclick="javascript:return confirm('¿Seguro de eliminar este registro?');" href="?c=cita&a=Eliminar&id_cita=<?php echo $r->id_cita; ?>" class="btn btn-small btn-dark"><i class="fa-solid fa-trash"></i></a>
+                                <!--<a  href="?c=cita&a=Crud&id_cita=<?php echo $r->id_cita?>;" class="btn btn-small btn-dark"><i class="fa-solid fa-pen-to-square"></i></a>-->
+                                <!--<a onclick="javascript:return confirm('¿Seguro de eliminar este registro?');" href="?c=cita&a=Eliminar&id_cita=<?php echo $r->id_cita?>" class="btn btn-small btn-dark"><i class="fa-solid fa-trash"></i></a>-->
                             </td>
                         </tr>
                         <?php endforeach; ?>

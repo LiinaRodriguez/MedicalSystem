@@ -33,7 +33,7 @@
         public function selectEsp(){
             try{
                 $result = array();
-                $stm = $this->pdo->prepare("SELECT * FROM medicalsystemdb.especialidad ;");
+                $stm = $this->pdo->prepare("SELECT especialidad FROM medicalsystemdb.especialidad ;");
                 $stm->execute();
                 return $stm->fetchAll(PDO::FETCH_OBJ);
 

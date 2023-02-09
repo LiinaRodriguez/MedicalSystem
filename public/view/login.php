@@ -26,7 +26,7 @@
                             <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                 <div class="card-body p-4 p-lg-5 text-black">
 
-                                    <form action="../model/login.php" method="POST">
+                                    <form action="paciente/cita.php" method="POST">
 
                                         <div class="d-flex align-items-center mb-3 pb-1">
                                             <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
@@ -56,6 +56,12 @@
                                             <input type="password" id="password" class="form-control form-control-lg" name="password" />
                                         </div>
 
+                                        <?php
+                                            if(isset($errorLogin)){
+                                                echo $errorLogin;
+                                            }
+                                        ?>
+
                                         <div class="pt-1 mb-4 ">
                                             <button class="btn btn-dark btn-lg btn-block" type="submit">Acceder</button>
                                         </div>
@@ -70,9 +76,7 @@
         </div>
     </section>
 
-    <?php 
-        include '../model/conection.php';
-    ?>
+
 
 
 </body>

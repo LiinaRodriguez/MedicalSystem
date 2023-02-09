@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://kit.fontawesome.com/f6c4a53415.js" crossorigin="anonymous"></script>
     <!--<script src="../plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
     <script src="../plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>-->
     <!--<link rel="stylesheet" href="\assets\bootstrap.min.js" />

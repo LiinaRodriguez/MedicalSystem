@@ -11,7 +11,6 @@
     <title>Pacientes</title>
 
 </head>
-
 <body>
     <div class="main-container d-flex">
         <div class="sidebar" id="side-nav">

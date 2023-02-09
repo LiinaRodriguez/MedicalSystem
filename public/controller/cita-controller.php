@@ -1,5 +1,5 @@
 <?php
-    ob_start();
+    
     require_once 'C:\xampp\htdocs\MedicalSystem\public\model\cita.php';
 
     class citaController{
@@ -13,7 +13,6 @@
             require_once 'C:\xampp\htdocs\MedicalSystem\public\view\header.php';
             require_once  'C:\xampp\htdocs\MedicalSystem\public\view\paciente\paciente_cita.php';
         }
-
 
         public function Crud(){
             $cita = new cita;
@@ -39,16 +38,16 @@
                    ? $this->model->Actualizar($cita)
                   : $this->model->Registrar($cita); 
                 
-                header('Location: C:\xampp\htdocs\MedicalSystem\public\view\paciente\cita.php');
-                die();
+                header('Location: ../paciente/cita.php');
+                die;
         }
 
 
         public function Eliminar(){
             
             $this->model->Eliminar($_REQUEST['id_cita']);
-            header('Location: C:\xampp\htdocs\MedicalSystem\public\view\paciente\cita.php');
-            exit();
+            header('Location: ../paciente/cita.php');
+            die;    
             
         }
 

@@ -12,23 +12,11 @@
     <title>Pacientes</title>
 
 </head>
+<?php
+    include_once "admin.php";
+   ?>
 <body>
-    <div class="main-container d-flex">
-        <div class="sidebar" id="side-nav">
-            <div class="header-box px-3 pt-3 pb-4">
-                <h1 class="fs-4">
-                    <span class="bg-white text-dark rounded shadow px-2 md-2">MS</span>
-                    <span class="text-white">Medical System</span>
-                </h1>
-                <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class="fa-solid fa-bars"></i></button>
-            </div>
-            <ul class="list-unstyled px-2 text-white">
-                <li class=""><a class="px-1 text-decoration-none d-block nav-link" href="admin.php"><i class="fa-solid fa-house px-3 py-2"></i>Inicio</a></li>
-                <li class=""><a class="px-1 text-decoration-none d-block nav-link" href="#"><i class="fa-solid fa-envelope px-3 py-2"></i>Citas</a></li>
-                <li class="active"><a class="px-1 text-decoration-none d-block nav-link" href=""><i class="fa-solid fa-user px-3 py-2"></i>Pacientes</a></li>
-                <li class=""><a class="px-1 text-decoration-none d-block nav-link" href="admin_medico.php"><i class="fa-solid fa-user-doctor px-3 py-2"></i>Médicos</a></li>
-            </ul>
-        </div>
+   
         <div class="content">
             <div class="container-fluid">
                 <div class="mt-4 pt-2 registrar">
@@ -59,9 +47,9 @@
                         <td><?php echo $r->genero; ?></td>
                         <td><?php echo $r->telefono; ?></td>
                             <td>
-                                <a href="?c=paciente&a=Crud&id_paciente=<?php echo $r->id_paciente; ?>" class="btn btn-small btn-dark"><i class="fa-solid fa-pen-to-square"></i></a>
-                                <a onclick="javascript:return confirm('¿Seguro de eliminar este registro?');" href="?c=paciente&a=Eliminar&id_paciente=<?php echo $r->id_paciente; ?>" class="btn btn-small btn-dark"><i class="fa-solid fa-trash"></i></a>
-                            </td>
+                                <a href="?c=paciente&a=Crud&id_paciente=<?php echo $r->id_paciente?>" class="btn btn-small btn-dark"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <a onclick="javascript:return confirm('¿Seguro de eliminar este registro?');" href="?c=paciente&a=Eliminar&id_paciente=<?php echo $r->id_paciente?>" class="btn btn-small btn-dark"><i class="fa-solid fa-trash"></i></a>
+                            </td>                                      
                         </tr>
                         <?php endforeach; ?>
                     </tbody>

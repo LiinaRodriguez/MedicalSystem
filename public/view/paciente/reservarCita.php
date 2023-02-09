@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="..\css\admin.css" rel="stylesheet">
+    <link href="/../../MedicalSystem/public/view/css/admin.css" rel="stylesheet">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Pacientes</title>
+    <title>Pacientes Nueva Cita</title>
 
 </head>
 
@@ -67,7 +67,7 @@
                 <div class="mb-3"> Seleccione sede
                 <select class="form-select" aria-label="Default select example" name="id_sede" required>
                     <option disabled selected >Seleccionar</option>
-                    <option value="">------</option>
+                    <option value="" selected>------</option>
                     <?php foreach ($this->model->selectMedico() as $m) :?>
                         <option value="<?php echo $m->id_sede ?>"><?php echo $m->id_sede ."" ; ?></option>
                     <?php endforeach; ?>

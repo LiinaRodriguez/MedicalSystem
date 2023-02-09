@@ -37,12 +37,12 @@
             $paciente->id_paciente > 0 
                    ? $this->model->Actualizar($paciente)
                    :$this->model->Registrar($paciente); 
-                header('Location: C:\xampp\htdocs\MedicalSystem\public\view\asesor\paciente.php');
+                header('Location: ../asesor/paciente.php');
         }
         
         public function Eliminar(){
             $this->model->Eliminar($_REQUEST['id_paciente']);
-            header('Location: C:\xampp\htdocs\MedicalSystem\public\view\asesor\paciente.php');
+            header('Location: ../asesor/paciente.php');
         }
     }
 
