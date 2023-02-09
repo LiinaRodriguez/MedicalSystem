@@ -74,19 +74,7 @@
                     <?php endforeach; ?>
                 </select>
                 </div>
-
-                <div class="mb-3"> Seleccione paciente
-                <select class="form-select" aria-label="Default select example" name="id_paciente" required>
-                    <option disabled selected >Seleccionar</option>
-                    <option value="" selected>------</option>
-                    <?php foreach ($this->model->selectPaciente() as $m) :?>
-                        <option value="<?php echo $m->id_paciente ;?>"><?php echo $m->nombre ."" ; ?></option>
-                    <?php endforeach; ?>
-                </select>
-                 </div>
-                
-                 <input type="hidden" name="email" value="<?php echo $emailuser; ?>"/>
-               
+                <input type="hidden" name="id_paciente" value="12"/>
                 <button type="submit"  class="btn btn-primary">Guardar</button>
                 </form>
             </div>
