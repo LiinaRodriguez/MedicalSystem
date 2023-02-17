@@ -31,11 +31,8 @@
                             class="fa-solid fa-envelope px-3 py-2"></i>Citas</a></li>
                 <li class=""><a class="px-1 text-decoration-none d-block nav-link" href="paciente.php"><i
                             class="fa-solid fa-user px-3 py-2"></i>Pacientes</a></li>
-                <li class=""><a class="px-1 text-decoration-none d-block nav-link" href="medico.php"><i
-                            class="fa-solid fa-user-doctor px-3 py-2"></i>Médicos</a></li>
                 <li class=""><a class="px-1 text-decoration-none d-block nav-link" href="especialidad.php"><i
-                            class="fa-solid fa-user-doctor px-3 py-2"></i>Especialidad</a></li>
-                <li class=""><a class="px-1 text-decoration-none d-block nav-link" href="sede.php"><i class="fa-solid fa-house-building"></i>Sede</a></li>
+                            class="fa-solid fa-user px-3 py-2"></i>Especialidad</a></li>
             </ul>
         </div>
 

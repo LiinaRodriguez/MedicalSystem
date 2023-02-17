@@ -38,14 +38,14 @@
                                         <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Inicia Sesion</h5>
 
                                         <div class="form-outline mb-4">
-                                            <h6 class="fw-normal">Tipo de usuario</h6>
+                                           <!-- <h6 class="fw-normal">Tipo de usuario</h6>
                                             <select id="dropdownrole" name="role" class="form-select" required>
                                                 <option class="dropdowm-item" disabled selected value>Tipo de usuario
                                                 </option>
                                                
                                                 <option class="dropdowm-item" value="3">Afiliado</option>
                                                
-                                            </select>
+                                            </select>-->
                                         </div>
 
                                         <div class="form-outline mb-4">

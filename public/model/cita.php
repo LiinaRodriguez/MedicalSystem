@@ -21,7 +21,7 @@
         public function Listar(){
             try{
                 $result = array();
-                $stm = $this->pdo->prepare("SELECT * FROM medicalsystemdb.cita     ;");
+                $stm = $this->pdo->prepare("SELECT * FROM medicalsystemdb.cita LEFT JOIN medicalsystemdb.medico ON cita.id_medico = medico.id_medico LEFT JOIN medicalsystemdb.sede ON cita.id_sede = sede.id_sede LEFT JOIN medicalsystemdb.especialidad ON cita.id_especialidad = especialidad.id_especialidad;");
                 $stm->execute();
                 return $stm->fetchAll(PDO::FETCH_OBJ);
 

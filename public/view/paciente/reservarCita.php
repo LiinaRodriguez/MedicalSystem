@@ -50,7 +50,7 @@
                 <div class="mb-3"> Seleccione especialidad
                 <select class="form-select" aria-label="Default select example" name="id_especialidad" required>
                     <option disabled selected >Seleccionar</option>
-                    <option value="">------</option>
+                    
                     <?php foreach ($this->model->selectEsp() as $m) :?>
                         <option value="<?php echo $m->id_especialidad; ?>"><?php echo $m->especialidad ."" ; ?></option>
                     <?php endforeach; ?>
@@ -59,7 +59,7 @@
                 <div class="mb-3"> Seleccione médico
                 <select class="form-select" aria-label="Default select example" name="id_medico" required>
                     <option disabled selected >Seleccionar</option>
-                    <option value="">------</option>
+                   
                     <?php foreach ($this->model->selectMedico() as $m) :?>
                         <option value="<?php echo $m->id_medico; ?>"><?php echo $m->nombre ."" ; ?></option>
                     <?php endforeach; ?>
@@ -68,7 +68,7 @@
                 <div class="mb-3"> Seleccione sede
                 <select class="form-select" aria-label="Default select example" name="id_sede" required>
                     <option disabled selected >Seleccionar</option>
-                    <option value="" selected>------</option>
+                  
                     <?php foreach ($this->model->selectSede() as $m) :?>
                         <option value="<?php echo $m->id_sede ?>"><?php echo $m->sede ."" ; ?></option>
                     <?php endforeach; ?>
